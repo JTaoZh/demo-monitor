@@ -1,0 +1,30 @@
+<el-container>
+  <el-header>
+    <el-menu class="el-menu-demo" mode="horizontal">
+      <el-menu-item index="1">
+        <a routerLink="/yk-real-time-monitor" routerLinkActive="active">
+          实时监测
+        </a>
+      </el-menu-item>
+      <el-menu-item index="2">
+        <a routerLink="/yk-history" routerLinkActive="active">
+          历史数据
+        </a>
+      </el-menu-item>
+      <el-menu-item index="3">
+        <a routerLink="/yk-position" routerLinkActive="active">
+          地理位置
+        </a>
+      </el-menu-item>
+
+      <el-menu-item index="4">
+        <a routerLink="/yk-command" routerLinkActive="active">
+          设备控制
+        </a>
+      </el-menu-item>
+    </el-menu>
+  </el-header>
+  <el-main>
+    <router-outlet></router-outlet>
+  </el-main>
+</el-container>
